@@ -27,12 +27,10 @@ namespace Part_3a_Console_Input
             Console.WriteLine("What is the current year?");
             currentYear = Convert.ToInt32(Console.ReadLine());
             
-
             Console.WriteLine("Greetings, " + userName + ". You were born in: " +(currentYear - age));
 
 
 
-            
             //2 Adding
             Console.WriteLine("Please type an integer:");
             int1 = Convert.ToInt32(Console.ReadLine());
@@ -60,6 +58,7 @@ namespace Part_3a_Console_Input
             Console.WriteLine("Your average distance is " + (Math.Round((distance1 + distance2 + distance3) / 3,2)));
 
 
+
             //4 Hypotenuse
             Console.WriteLine("Please enter the first side length of the triangle: ");
             trilength1 = Convert.ToDouble(Console.ReadLine());
@@ -67,7 +66,7 @@ namespace Part_3a_Console_Input
             Console.WriteLine("Please enter the second side length of the triangle: ");
             trilength2 = Convert.ToDouble(Console.ReadLine());
 
-           answer = Math.Pow(trilength1,2) + Math.Pow(trilength2,2);
+            answer = Math.Pow(trilength1,2) + Math.Pow(trilength2,2);
             Console.WriteLine("The hypotenuse is: " + Math.Round(Math.Sqrt(answer),2));
 
         }
