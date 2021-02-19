@@ -57,6 +57,7 @@ namespace Part_3a_Console_Input
             Console.WriteLine("Please input your last distance:");
             distance3 = Convert.ToDouble(Console.ReadLine());
 
+            Console.WriteLine("Your average distance is " + (Math.Round((distance1 + distance2 + distance3) / 3,2)));
 
 
         }
