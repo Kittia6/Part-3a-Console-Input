@@ -27,6 +27,13 @@ namespace Part_3a_Console_Input
             Console.WriteLine("What is the current year?");
             CurrentYear = Console.ReadLine();
             resultYear = Convert.ToInt32(CurrentYear);
+
+            int BirthYear = resultYear - resultAge;
+            Console.WriteLine("Greetings, " + UserName + ". You were born in: "  + BirthYear);
+
+
+
+
         }
     }
 }
