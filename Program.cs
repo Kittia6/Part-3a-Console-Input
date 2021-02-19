@@ -68,7 +68,8 @@ namespace Part_3a_Console_Input
             trilength2 = Convert.ToDouble(Console.ReadLine());
 
            answer = Math.Pow(trilength1,2) + Math.Pow(trilength2,2);
-            Console.WriteLine("The hypotenuse is: " + Math.Sqrt(answer));
+            Console.WriteLine("The hypotenuse is: " + Math.Round(Math.Sqrt(answer),2));
+
         }
     }
 }
