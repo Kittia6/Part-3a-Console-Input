@@ -10,27 +10,52 @@ namespace Part_3a_Console_Input
     {
         static void Main(string[] args)
         {
-            string UserName;
-            string Age;
-            string CurrentYear;
-            int resultAge;
-            int resultYear;
-            
+            string userName;
+            int currentYear, age;
+            int int1, int2, int3;
+            double distance1, distance2, distance3;
 
+
+            //1
             Console.WriteLine("What is your name?");
-            UserName = Console.ReadLine();
+            userName = Console.ReadLine();
 
             Console.WriteLine("How old are you?");
-            Age = Console.ReadLine();
-            resultAge = Convert.ToInt32(Age);
+            age = Convert.ToInt32(Console.ReadLine());
             
             Console.WriteLine("What is the current year?");
-            CurrentYear = Console.ReadLine();
-            resultYear = Convert.ToInt32(CurrentYear);
+            currentYear = Convert.ToInt32(Console.ReadLine());
+            
 
-            int BirthYear = resultYear - resultAge;
-            Console.WriteLine("Greetings, " + UserName + ". You were born in: "  + BirthYear);
+            Console.WriteLine("Greetings, " + userName + ". You were born in: " +(currentYear - age));
 
+
+
+            
+            //2
+            Console.WriteLine("Please type an integer:");
+            int1 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Please type another integer:");
+            int2 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("One more:");
+            int3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Your Total is: " + (int1 + int2 + int3));
+
+
+            
+            
+            //3
+            Console.WriteLine("Please input your first distance:");
+            distance1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please input your second distance:");
+            distance2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please input your last distance:");
+            distance3 = Convert.ToDouble(Console.ReadLine());
 
 
 
